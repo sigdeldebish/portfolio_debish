@@ -4,7 +4,7 @@
 
 About Me Page Main Content Stylesheet
 Author: Debish Sigdel
-Filename: about.css
+Filename: about.css.
 
 */
 
@@ -19,8 +19,7 @@ main {
   padding-bottom: 10vh;
   background-image: url(../images/about_back.png);
   background-repeat: no-repeat;
-  background-size: fill;
-
+  background-size: cover;
 }
 
 .grid_container {
@@ -28,6 +27,7 @@ main {
     width: 100%;
     grid-template-columns: 50vw 50vw;
     align-items: center;
+    position: relative;
     overflow-y: scroll;
     ul {
         margin-left: 5%;
@@ -43,6 +43,8 @@ main {
 
 .academic, .personal {
     margin: 2%;
+    height: 90%;
+    position: relative;
     border-radius: 10%;
     a {
         margin: 1%;
@@ -67,7 +69,7 @@ main {
     grid-column: 1 / -1; 
     border: 1px solid #ccc;
     background-color: #b9f670b1;
-    display: inline-block;
+    position: relative;
     background: radial-gradient(
       circle, 
       #b9f670b1,

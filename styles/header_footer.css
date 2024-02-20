@@ -133,7 +133,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: scroll;
     h4 {
         font-weight: lighter;
         color: rgba(49, 44, 44, 0.91);
@@ -145,7 +144,7 @@ footer {
     font-size: 14px;
     display: block;
     text-align: center;
-    line-height: 90%;
+    line-height: 50%;
     a img {
         transition: transform .2s ease-in;
         cursor: pointer;

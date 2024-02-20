@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/*
+
+Gallery Main Content Stylesheet
+Author: Debish Sigdel
+Filename: gallery.css.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+
+.grid_container {
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+
+.gallery_slideshow_container {
+    max-width: 60%;
+    max-height: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+.image_slides {
+    overflow: hidden;
+    display: none;
+    text-align: center;
+
+}
+
+.image_slides img {
+    max-height: 100%; 
+    max-width: 100%;
+    margin: auto;
+    display: grid; 
+    animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: bottom;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* .prev, .next { 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; width: auto; 
+    padding: 16px; 
+    margin-top: -22px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 18px; 
+    transition: 0.6s ease; 
+    border-radius: 0 3px 3px 0; 
+} */
+/* 
+.next { 
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
+}
+
+.prev { 
+    left: 0; 
+    border-radius: 3px 0 0 3px; 
+} */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover { 
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
