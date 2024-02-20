@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio Homepage</title>
+   <title>Portfolio Knowledge Share Page</title>
    <link rel="stylesheet" href="../styles/header_footer.css">
    <link rel="stylesheet" href="../styles/homepage.css">
    <link rel="stylesheet" href="../styles/knowledge.css">
@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="left_items">
-            <a href="../pages/homepage.html">
+            <a href="../pages/index.html">
                 <img src="../images/icons/profile_pic.jpg" alt="Profile Picture" class="profile_pic">
             </a>
             <div class="header_bar_message">
@@ -25,7 +25,7 @@
                 <div></div>
             </div>
             <div class="dropdown_links">
-                <a href="homepage.html">Homepage</a>
+                <a href="../index.html">Homepage</a>
                 <a href="about.html">About Me</a>
                 <a href="knowledge.html">Knowledge Share</a>
                 <a href="gallery.html">Gallery</a>
@@ -210,11 +210,77 @@
                             extensive features to expand your API, and explore Django's rich ecosystem to enhance your web applications. Happy coding!
                         </p>
                     </div>
+
                     <div class="slide" id="article_slide3">
+                        <h1>An Example Python Program to Highlight the Advantages of OOP in Real-World Software Development</h1>
+                        <p>
+                            Object-Oriented Programming (OOP) is a programming paradigm that uses objects and 
+                            classes in programming. It aims to implement real-world entities like inheritance, 
+                            hiding, polymorphism, etc. in programming. The main aim of OOP is to bind together 
+                            the data and the functions that operate on them so that no other part of the code 
+                            can access this data except that function. Python, being a versatile programming language, 
+                            supports OOP and offers numerous advantages in real-world software development. This knowledge 
+                            share article explores those advantages through an example Python program.
+                        </p>
+                        
+                        <h2>Key Concepts of OOP</h2>
+                        <ul>
+                            <li><strong>Class</strong>: A blueprint for creating objects (a particular data structure).</li>
+                            <li><strong>Object</strong>: An instance of a class.</li>
+                            <li><strong>Inheritance</strong>: A way to form new classes using classes that have already been defined.</li>
+                            <li><strong>Encapsulation</strong>: Hiding the private details of a class from other objects.</li>
+                            <li><strong>Polymorphism</strong>: A concept of using common operation in different ways for different data input.</li>
+                        </ul>
 
+                        <h2>Advantages of OOP</h2>
+                        <ul>
+                            <li>Modularity for easier troubleshooting.</li>
+                            <li>Reuse of code through inheritance.</li>
+                            <li>Flexibility through polymorphism.</li>
+                            <li>Effective problem solving.</li>
+                        </ul>
 
-                        Article Slide 3
+                        <h2>Example Python Program: Implementing a Vehicle Class Hierarchy</h2>
+                        <p>To illustrate OOP's advantages in software development, consider a simple program that simulates a vehicle class hierarchy.</p>
+                        
+                        <h3>Step 1: Defining the Base Class</h3>
+                        <pre class="styled_article_code"><code>class Vehicle:
+                        def __init__(self, name, mileage, capacity):
+                            self.name = name
+                            self.mileage = mileage
+                            self.capacity = capacity
 
+                        def display_specs(self):
+                            print(f"Vehicle Name: {self.name}, Mileage: {self.mileage}, Capacity: {self.capacity}")
+
+                        def fare(self):
+                            return self.capacity * 100</code></pre>
+
+                        <h3>Step 2: Implementing Inheritance</h3>
+                        <pre class="styled_article_code"><code>class Bus(Vehicle):
+                        def fare(self):
+                            base_fare = super().fare()
+                            final_fare = base_fare + base_fare * 0.1  # Adding 10% maintenance charge
+                            return final_fare</code></pre>
+
+                        <h3>Step 3: Creating Objects and Demonstrating Encapsulation</h3>
+                        <pre class="styled_article_code"><code>my_vehicle = Vehicle("Honda Civic", 25, 5)
+                    my_vehicle.display_specs()
+
+                    my_bus = Bus("School Bus", 12, 50)
+                    print(f"Total Bus fare is: {my_bus.fare()}")</code></pre>
+
+                        <h2>Conclusion</h2>
+                        <p>
+                            This simple example demonstrates the power of
+                             Object-Oriented Programming in Python for real-world software development. 
+                             OOP principles such as encapsulation, inheritance, and polymorphism allow for 
+                             creating flexible, modular, and reusable code. By modeling real-world scenarios 
+                             with classes and objects, developers can write more efficient, understandable, 
+                             and maintainable code, leading to faster development and easier troubleshooting. 
+                             As you delve deeper into Python and OOP, you'll discover even more ways to apply 
+                             these principles to solve complex software development challenges.
+                        </p>
 
                     </div>
                 </div>
