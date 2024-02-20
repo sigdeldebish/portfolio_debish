@@ -47,12 +47,12 @@ main {
     position: relative;
     border-radius: 10%;
     a {
-        margin: 1%;
+        padding: 2%;
         background-color: #b9f670b1;
         display: inline-block;
         background: radial-gradient(
         circle, 
-        #b9f670b1,
+        #baf67096,
         #eeefedac
         );
         text-align: center;
@@ -67,12 +67,10 @@ main {
 
 .professional {
     grid-column: 1 / -1; 
-    border: 1px solid #ccc;
-    background-color: #b9f670b1;
     position: relative;
     background: radial-gradient(
       circle, 
-      #b9f670b1,
+      #baf67065,
       #eeefedac
   );
     border-radius: 20%;
