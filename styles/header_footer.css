@@ -188,3 +188,60 @@ footer {
     0%, 100% { border-color: transparent; }
     25%, 50% { border-color: black; }
 }
+
+@media (max-width: 600px) {
+    footer, header {
+      height: 15vh; 
+      flex-direction: column; 
+      padding: 5px; 
+    }
+  
+    .center_footer_note {
+      font-size: 12px; 
+      line-height: normal; 
+    }
+  
+    .career_left, .academics_right {
+      font-size: 50%;
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+    }
+  
+    footer h4 {
+      font-size: smaller;
+    }
+  
+    .footer_social_media_links img {
+      padding: 1vw;
+    }
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    footer, header {
+      height: 12vh; 
+      flex-direction: row; 
+      padding: 10px; 
+    }
+  
+    .center_footer_note {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+  
+    .career_left, .academics_right {
+      font-size: 55%;
+      padding-bottom: 1.5vh;
+      padding-top: 1.5vh;
+    }
+  
+    footer h4 {
+      font-size: slightly larger;
+    }
+  
+    .footer_social_media_links img {
+      padding: 0.75vw;
+    }
+}
+  
+

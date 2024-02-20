@@ -98,17 +98,11 @@ main {
     color: #83151c
   }
   h2 {
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
     color: #83151c;
   
-  }
-  h3 {
-    color: #83151c;
-    font-weight: bolder;
-    font-size: larger;
-    margin-top: 10%;
   }
   img {
     height: auto;
@@ -126,7 +120,10 @@ main {
   .homepage_intro,
   .intro_tile {
     grid-template-columns: 100%;
-    width: 80%; 
+    width: 80%;
+    h2 {
+      font-size: 60%;
+    } 
   }
   
   .intro_tile {
@@ -140,13 +137,14 @@ main {
     width: 8vw;
   }
   
-  .homepage_intro,
   .intro_tile {
     grid-template-columns: repeat(2, 50%);
+    h2 {
+      font-size: 60%;
+    }
   }
   
   .intro_tile {
     padding: 2%;
-    font-size: 110%;
   }
 }
