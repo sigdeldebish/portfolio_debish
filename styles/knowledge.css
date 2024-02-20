@@ -215,7 +215,7 @@ main {
     width: auto;
     margin-top: -50px;
     padding: 16px;
-    color: white;
+    color: rgb(60, 53, 53);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -235,7 +235,7 @@ main {
 
 
 .prev:hover, .next:hover { 
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(69, 63, 63, 0.532);
 }
 
 @media (max-width: 600px) {
@@ -248,6 +248,7 @@ main {
       margin-left: 0;
       margin-right: 0;
       padding: 10px;
+      top: 1;
     }
   
     .styled_article_code {
@@ -257,6 +258,7 @@ main {
   
     .product_doc_links {
       padding: 10px;
+      bottom: 1;
     }
   
     .product_doc_links img {
@@ -265,7 +267,7 @@ main {
     }
   
     .prev, .next {
-      font-size: 80%; 
+      font-size: 60%; 
     }
 }
   
@@ -278,6 +280,7 @@ main {
         width: 100%; 
         padding: 5%; 
         height: auto; 
+        top: 1;
     }
 
     .styled_article_code {
@@ -287,6 +290,7 @@ main {
 
     .product_doc_links {
         padding: 2%; 
+        bottom: 1;
     }
 
     .product_doc_links img {

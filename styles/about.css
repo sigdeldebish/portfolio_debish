@@ -75,19 +75,13 @@ main {
   );
     border-radius: 20%;
     padding: 2%;
-}
-
-.skills_table{
-    width: 100%;
-    border-collapse: collapse;
     th, td {
         width: 8%;
-        text-align: left;
-        padding: 1%;
+        padding-left: 2vw;
     }
     thead th {
+        padding: 1vw 1vw;
         background-color: #a2f67ea9;
-        text-align: center;
     }
     tbody td:nth-child(even) {
         background-color: #9bd5f19d;
@@ -134,7 +128,7 @@ main {
     }
 
     .skills_table th, .skills_table td {
-        padding: 1.5%; 
+        padding: 2%; 
     }
 }
   
