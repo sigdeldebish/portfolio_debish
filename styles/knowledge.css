@@ -293,7 +293,6 @@ main {
     }
 
     .product_doc_links {
-        flex-direction: row; 
         padding: 2%; 
         overflow-x: scroll; 
     }
