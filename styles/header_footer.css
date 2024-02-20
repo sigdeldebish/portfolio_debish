@@ -192,19 +192,17 @@ footer {
 @media (max-width: 600px) {
     footer, header {
       height: 15vh; 
-      flex-direction: row; 
-      padding: 5px; 
     }
   
     .center_footer_note {
-      font-size: 12px; 
+      font-size: 60%; 
       line-height: normal; 
     }
   
     .career_left, .academics_right {
       font-size: 50%;
-      padding-bottom: 2vh;
-      padding-top: 2vh;
+      padding-bottom: 1vh;
+      padding-top: 1vh;
     }
   
     footer h4 {
@@ -212,7 +210,7 @@ footer {
     }
   
     .footer_social_media_links img {
-      padding: 1vw;
+      padding: 0.5vw;
     }
   }
   
@@ -224,7 +222,7 @@ footer {
     }
   
     .center_footer_note {
-      font-size: 13px;
+      font-size: 80%;
       line-height: 1;
     }
   
