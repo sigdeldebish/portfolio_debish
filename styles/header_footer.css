@@ -133,7 +133,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    overflow: scroll;
     h4 {
         font-weight: lighter;
         color: rgba(49, 44, 44, 0.91);
