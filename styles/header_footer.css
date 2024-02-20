@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*
+
+Page Header Stylesheet
+Author: Debish Sigdel
+Filename: header.css
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+###########!!!!!!!!!
+          Header Styles Start
+###########!!!!!!!!
+*/
+
+header {
+    width: 100vw;
+    height: 8vh;
+    background-color: #55d1beb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_items, .burger_dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile_pic {
+    width: 3vw;
+    border-radius: 20%;
+    transition: transform .05s;
+    margin-left: 0.25vw;
+    margin-right: 1vw;
+    margin-top: 0.5vh;
+}
+
+.header_bar_message {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: monospace;
+    letter-spacing: .17em;
+    text-align: left;
+    font-size: 0.75vw;
+}
+
+.burger_icon {
+    margin-right: 1vw;
+    margin-top: 1vh;
+    cursor: pointer;
+    div {
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        margin: 5px 0;
+        border-radius: 50%;
+      }
+}
+
+.burger_icon:hover {
+    div {
+        color: black;
+        background-color: #ed6a5a;
+    }
+    padding: 100 100;
+    border-radius: 90;
+}
+
+.dropdown_links {
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    position: absolute;
+    background-color: #f3ef75f2;
+    min-width: 10vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear, transform 0.3s linear;
+}
+
+.dropdown_links a {
+    color: #972617;
+    position: relative;
+    padding: 10% 15%;
+    text-decoration: blink;
+    display: inline-block;
+    font-family: 'Lucida Grande';
+    font-size:smaller;
+}
+
+.dropdown_links a:hover {
+    background-color: #ddd;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.show {
+    visibility: visible; 
+    opacity: 1; 
+    transform: translateY(0); 
+    transition-delay: 0s; 
+}
+
+
+ /*
+###########!!!!!!!!!
+          Footer Styles Start
+###########!!!!!!!!
+*/
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(
+        black,
+        #f3ef75c4,
+        black
+        
+    );
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    h4 {
+        font-weight: lighter;
+        color: rgba(49, 44, 44, 0.91);
+    }
+}
+
+.center_footer_note {
+    padding: 15px 0;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    line-height: 90%;
+    a img {
+        transition: transform .2s ease-in;
+        cursor: pointer;
+        padding: 0.5vw;
+        border: none;
+        border-style: hidden;
+    }
+    h4 {
+        color: rgba(223, 211, 211, 0.847);
+    }
+}
+
+.career_left, .academics_right {
+    letter-spacing: .27em;
+    text-align: center;
+    font-size: 60%;
+    font-weight: lighter;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+
+.footer_social_media_links img:hover{
+    transform: scale(1.2);
+}
+
+.typing_animation {
+    border-right: 2px solid; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    width: 0; 
+    animation: typing 10s steps(30, end) forwards infinite;
+}
+
+@keyframes typing {
+    0%, 100% { width: 0; }
+    50% { width: 100%; }50% { width: 100%; }
+}
+  
+@keyframes blinkCursor {
+    0%, 100% { border-color: transparent; }
+    25%, 50% { border-color: black; }
+}

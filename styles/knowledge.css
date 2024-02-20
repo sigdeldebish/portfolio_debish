@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*
+
+Knowledge Share Page Main Content Stylesheet
+Author: Debish Sigdel
+Filename: knowledge.css
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+  min-height: 80vh;
+  padding-bottom: 10vh;
+  background-image: url(../images/about_back.png);
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.grid_container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 70vh 30vh;
+    align-items: center;
+    h2{
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-family: 'Gill Sans';
+        letter-spacing: .17em;
+        color: #83151c;
+    }
+}
+
+.article_slider {
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+
+.slides {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    
+}
+
+#article_slide1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out; /* Smooth transition for the opacity */
+    background-color: #f0f0f0; /* Light gray background, adjust as needed */
+    padding: 5%; /* Padding around text */
+    margin-left: 3%;
+    margin-right: 3%;
+    overflow: scroll;
+    background: radial-gradient(
+      #0f91a8d1,
+      #eeefedac
+    );
+    border-radius: 10%;
+
+}
+
+#article_slide2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out; /* Smooth transition for the opacity */
+    background-color: #f0f0f0; /* Light gray background, adjust as needed */
+    padding: 5%; /* Padding around text */
+    margin-left: 3%;
+    margin-right: 3%;
+    overflow: scroll;
+    background: linear-gradient(
+      #94f463c9,
+      #eeefedc4
+    );
+    border-radius: 10%;
+
+}
+
+#article_slide1 h2, #article_slide1 h1, #article_slide1 h3, #article_slide1 h4 {
+        text-align: center;
+        padding: 1%;
+        margin-bottom: 1%;
+        font-family: Georgia;
+        letter-spacing: normal;
+        color: #000;
+}
+#article_slide2 h2, #article_slide2 h1, #article_slide1 h3, #article_slide2 h4 {
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+    font-family: Georgia;
+    letter-spacing: normal;
+    color: #000;
+}
+
+#article_slide3 h2, #article_slide3 h1, #article_slide3 h3, #article_slide3 h4 {
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 1%;
+    font-family: Georgia;
+    letter-spacing: normal;
+    color: #000;
+}
+
+
+.styled_article_code {
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+
+    background-position: left top, left 1em;
+    padding: 1em; /* Adds padding around the text */
+    border-left: 0.5vw solid #83151c; /* Mimics the vertical line of a notebook */
+    background-color: #fff3e0; /* Light yellow background, like notebook paper */
+    max-width: 60%; /* Adjust based on your preference */
+    border: 1% solid #d3d3d3; /* Optional: adds a border around the notebook */
+    margin: auto; /* Centers the notebook on the page */
+    margin-top: 1%;
+
+}
+
+.product_doc_links {
+    display: inline-flex;
+    justify-content: space-between;
+    position:absolute;
+    width: 100%;
+    max-height: 50vh;
+    padding-top: 2%;
+    padding-bottom: 2vh;
+    overflow: scroll;
+    background-color: #e0eadda9;
+    img {
+        transition: transform .1s ease-in;
+        cursor: pointer;
+        width: 3.5vw;
+        margin-right: 3%;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+}
+
+
+.product_doc_links img:hover{
+    transform: scale(1.3);
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    z-index: 100;
+    top: 70%;
+    background-color: #e03a3a7d;
+    transform: translateY(-50%);
+    padding: 1%
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
