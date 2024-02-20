@@ -115,3 +115,38 @@ main {
     width: 90%;
   }
 }
+
+/* Phone devices */
+@media (max-width: 600px) {
+
+  .tools_sneak_peek img {
+    width: 12vw; 
+  }
+  
+  .homepage_intro,
+  .intro_tile {
+    grid-template-columns: 100%;
+    width: 80%; 
+  }
+  
+  .intro_tile {
+    padding: 5%; 
+  }
+}
+
+/* iPad devices -  portrait and landscape orientations */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tools_sneak_peek img {
+    width: 8vw;
+  }
+  
+  .homepage_intro,
+  .intro_tile {
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .intro_tile {
+    padding: 2%;
+    font-size: 110%;
+  }
+}
