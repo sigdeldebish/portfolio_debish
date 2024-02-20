@@ -2,9 +2,9 @@
 
 /*
 
-Page Header Stylesheet
+Header and Footer Stylesheet
 Author: Debish Sigdel
-Filename: header.css
+Filename: header_footer.css
 
 */
 
@@ -128,7 +128,7 @@ footer {
         black
         
     );
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -140,9 +140,9 @@ footer {
 }
 
 .center_footer_note {
-    padding: 15px 0;
-    font-size: 14px;
+    font-size: 90%;
     display: block;
+    padding-bottom: 1%;
     text-align: center;
     line-height: 50%;
     a img {
@@ -153,7 +153,8 @@ footer {
         border-style: hidden;
     }
     h4 {
-        color: rgba(223, 211, 211, 0.847);
+        color: rgb(254, 252, 252);
+        font-size: smaller;
     }
 }
 
@@ -171,13 +172,6 @@ footer {
     transform: scale(1.2);
 }
 
-.typing_animation {
-    border-right: 2px solid; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    width: 0; 
-    animation: typing 10s steps(30, end) forwards infinite;
-}
 
 @keyframes typing {
     0%, 100% { width: 0; }
@@ -191,57 +185,82 @@ footer {
 
 @media (max-width: 600px) {
     footer, header {
-      height: 80%; 
+        height: 15vh; 
+        h4 {
+            font-weight: lighter;
+            font-size: 1.8vw;
+            color: rgba(15, 14, 14, 0.91);
+        }
     }
-  
-    .center_footer_note {
-      font-size: 50%; 
-      line-height: normal; 
-      img {
-        height: 70%;
-        width: 70%;
-      }
-    }
-  
-    .career_left, .academics_right {
-      font-size: 40%;
-      padding-bottom: 1vh;
-      padding-top: 1vh;
-    }
-  
-    footer h4 {
-      font-size: smaller;
-    }
-  
-    .footer_social_media_links img {
-      padding: 0.5vw;
-    }
-  }
-  
 
-  @media (min-width: 601px) and (max-width: 1024px) {
-    footer, header {
-      height: 80%; 
+    .header_bar_message {
+        font-size: 3vw;
     }
-  
+    .profile_pic {
+        width: 10vw;
+    }
+    .dropdown_links a {
+       padding: 2vw 2vw;
+    }
+    
+
     .center_footer_note {
-      font-size: 60%;
-      line-height: 1;
-      img {
-        height: 70%;
-        width: 70%;
-      }
-    }
-  
-    .career_left, .academics_right {
-      font-size: 50%;
-      padding-bottom: 1%;
-      padding-top: 1%;
-    }
-  
-    .footer_social_media_links img {
-      padding: 1%;
+        display: block;
+        text-align: center;
+        line-height: 50%;
+        a img {
+            width: 8vw;
+            transition: transform .2s ease-in;
+            cursor: pointer;
+            padding: 1vw;
+            border: none;
+            border-style: hidden;
+        }
+        h4 {
+            padding-top: 1vh;
+            color: black;
+            width: 35vw;
+        }
     }
 }
   
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    footer, header {
+        height: 10vh; 
+        h4 {
+            font-weight: lighter;
+            font-size: 1vw;
+            color: rgba(15, 14, 14, 0.91);
+        }
+    }
+
+    .header_bar_message {
+        font-size: 2vw;
+    }
+    .profile_pic {
+        width: 6vw;
+    }
+
+    .center_footer_note {
+        display: block;
+        text-align: center;
+        line-height: 50%;
+        a img {
+            width: 6vw;
+            transition: transform .2s ease-in;
+            cursor: pointer;
+            padding: 1vw;
+            border: none;
+            border-style: hidden;
+        }
+        h4 {
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            color: black;
+            width: 35vw;
+        }
+    }
+}
+
 

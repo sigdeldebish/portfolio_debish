@@ -4,7 +4,7 @@
 
 Homepage Stylesheet
 Author: Debish Sigdel
-Filename: header.css
+Filename: homepage.css
 
 */
 
@@ -81,6 +81,15 @@ main {
   grid-template-columns: 100vw;
 }
 
+
+.typing_animation {
+  border-right: 2px solid; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  width: 0; 
+  animation: typing 10s steps(30, end) forwards infinite;
+}
+
 .intro_tile {
   justify-self: end; 
   width: 40%;
@@ -110,28 +119,23 @@ main {
   }
 }
 
-/* Phone devices */
-@media (max-width: 600px) {
 
+@media (max-width: 600px) {
   .tools_sneak_peek img {
     width: 12vw; 
   }
   
-  .homepage_intro,
-  .intro_tile {
+  .homepage_intro, .intro_tile {
+    font-size: 100%;
     grid-template-columns: 100%;
     width: 80%;
     h2 {
-      font-size: 60%;
+      font-size: 90%;
     } 
   }
-  
-  .intro_tile {
-    padding: 5%; 
-  }
+
 }
 
-/* iPad devices -  portrait and landscape orientations */
 @media (min-width: 601px) and (max-width: 1024px) {
   .tools_sneak_peek img {
     width: 8vw;

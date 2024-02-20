@@ -91,45 +91,27 @@ main {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .grid_container {
       display: grid;
-      grid-template-columns: 100%; 
-      overflow-y: auto; 
+      grid-template-columns: 100%;  
     }
   
     .academic, .personal, .professional {
-      margin: 5%; 
-      height: auto; 
-      border-radius: 5%; 
-      padding: 5%; 
+        margin: 5%; 
+        height: auto; 
+        border-radius: 5%;
+        a {
+            font-size: 90%;
+        }
     }
   
     .skills_table, .skills_table th, .skills_table td {
-      width: auto; 
-      padding: 2%; 
+        width: 15vw;
+        padding: 2vw 2vw 2vh 2vh;
+        text-align: left;
     }
 }
   
-@media (min-width: 601px) and (max-width: 1024px) {
-    .grid_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .academic, .personal {
-        margin: 3%; 
-        height: auto; 
-        border-radius: 8%; 
-    }
-
-    .professional {
-        grid-column: 1 / -1; 
-        padding: 3%; 
-    }
-
-    .skills_table th, .skills_table td {
-        padding: 2%; 
-    }
-}
   
   

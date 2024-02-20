@@ -2,7 +2,7 @@
 
 /*
 
-Knowledge Share Page Main Content Stylesheet
+Knowledge Share  Main Content Stylesheet
 Author: Debish Sigdel
 Filename: knowledge.css
 
@@ -55,9 +55,9 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: opacity 1s ease-in-out; /* Smooth transition for the opacity */
-    background-color: #f0f0f0; /* Light gray background, adjust as needed */
-    padding: 5%; /* Padding around text */
+    transition: opacity 1s ease-in-out; 
+    background-color: #f0f0f0; 
+    padding: 5%; 
     margin-left: 3%;
     margin-right: 3%;
     overflow: scroll;
@@ -73,9 +73,9 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: opacity 1s ease-in-out; /* Smooth transition for the opacity */
-    background-color: #f0f0f0; /* Light gray background, adjust as needed */
-    padding: 5%; /* Padding around text */
+    transition: opacity 1s ease-in-out; 
+    background-color: #f0f0f0; 
+    padding: 5%; 
     margin-left: 3%;
     margin-right: 3%;
     overflow: scroll;
@@ -91,9 +91,9 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: opacity 1s ease-in-out; /* Smooth transition for the opacity */
-    background-color: #f0f0f0; /* Light gray background, adjust as needed */
-    padding: 5%; /* Padding around text */
+    transition: opacity 1s ease-in-out; 
+    background-color: #f0f0f0;
+    padding: 5%; 
     margin-left: 3%;
     margin-right: 3%;
     overflow: scroll;
@@ -140,7 +140,7 @@ main {
     padding: 1em; 
     border-left: 0.5vw solid #83151c;
     background-color: #fff3e0; 
-    max-width: 60%; 
+    max-width: 80%; 
     border: 1% solid #d3d3d3; 
     margin: auto; 
     margin-top: 1%;
@@ -238,68 +238,40 @@ main {
     background-color: rgba(69, 63, 63, 0.532);
 }
 
-@media (max-width: 600px) {
-    .grid_container {
-      grid-template-rows: auto auto; 
-    }
-  
-    .article_slider, .slides, #article_slide1, #article_slide2, #article_slide3 {
-      width: 100%; 
-      margin-left: 0;
-      margin-right: 0;
-      padding: 10px;
-      top: 1;
-    }
-  
-    .styled_article_code {
-      max-width: 90%; 
-      padding: 5%; 
-    }
-  
-    .product_doc_links {
-      padding: 10px;
-      bottom: 1;
-    }
-  
-    .product_doc_links img {
-      width: 100%; 
-      margin-bottom: 5%; 
-    }
-  
-    .prev, .next {
-      font-size: 60%; 
-    }
-}
-  
-@media (min-width: 601px) and (max-width: 1024px) {
-    .grid_container {
-        grid-template-rows: 50vh 50vh;
-    }
+@media (max-width: 1024px) {
 
+    .grid_container {
+        overflow: scroll;
+        grid-template-rows: 80vh 20vh;
+        h2 {
+            font-size: smaller;
+        }
+    }
     .article_slider, .slides, #article_slide1, #article_slide2, #article_slide3 {
-        width: 100%; 
-        padding: 5%; 
-        height: auto; 
+        width: 90%; 
         top: 1;
+        padding-left: 7vw;
+        h1, h2, h3, h4 {
+            font-size: smaller;
+        }
     }
-
     .styled_article_code {
-        max-width: 80%; 
-        padding: 3%; 
+        max-width: 100%; 
     }
-
     .product_doc_links {
-        padding: 2%; 
         bottom: 1;
+        img {
+            width: 10vw;
+        }
     }
-
-    .product_doc_links img {
-        width: 6vw; 
-    }
-
     .prev, .next {
-        font-size: 16px; 
-        padding: 12px; 
+        font-size: 60%; 
+        width: 20vw;
+        height: 0.5vh;
+        padding-top: 0;
+    }
+    .next {
+        left: 80vw;
     }
 }
   

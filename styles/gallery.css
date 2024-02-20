@@ -20,8 +20,7 @@ Filename: gallery.css.
 .grid_container {
     display: grid;
     height: 83vh;
-    /* grid-template-rows: 1fr; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     overflow: hidden;
     z-index: 0;
 
@@ -29,7 +28,7 @@ Filename: gallery.css.
 
 .gallery_slideshow_container {
     width: 100%;
-    position: relative; /* Needed for absolute positioning of images */
+    position: relative; 
     overflow: hidden; 
     background-color: #000;
     right: 0;
@@ -43,10 +42,10 @@ Filename: gallery.css.
 }
 
 .image_slides img {
-    width: 100%; /* Ensure image spans the full width of the container */
-    height: 100%; /* Ensure image spans the full height of the container */
-    object-fit: cover; /* Cover the container without distorting the image */
-    position: absolute; /* Absolute positioning to allow all images to use the full container */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
     top: 0;
     left: 0;
     animation: slideIn 2s ease forwards;
@@ -91,9 +90,9 @@ Filename: gallery.css.
 
 .canvas-container {
     right: 1;
-    width: 50%; /* Adjust based on your layout */
-    height: 83vh; /* Set a fixed height */
-    border: 2px solid #000; /* Add a border to visualize the canvas area */
+    width: 50%; 
+    height: 83vh;
+    border: 2px solid #000;
 }
 
 .canvas_title {
@@ -118,5 +117,25 @@ canvas {
     height: 100%;
 }
 
-
-
+@media (max-width: 1024px) {
+    .grid_container {
+        height: 75vh;
+        grid-template-columns: 1fr;
+    }
+    #reset_doodle{
+        display: none;
+    }
+    .canvas-container {
+        display: none;
+    }
+    #doodlingCanvas {
+        display: none;
+    }
+    .canvas_title {
+        display: none;
+    }
+    .gallery_slideshow_container {
+        height: 200%;
+    }
+}
+  
