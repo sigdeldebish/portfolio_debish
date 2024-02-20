@@ -250,7 +250,6 @@ main {
       margin-right: 0;
       padding: 10px;
       height: auto; 
-      overflow-y: auto; 
     }
   
     .styled_article_code {
@@ -259,10 +258,8 @@ main {
     }
   
     .product_doc_links {
-      flex-direction: column; 
       max-height: none; 
       padding: 10px;
-      overflow-y: auto; 
     }
   
     .product_doc_links img {
@@ -294,7 +291,6 @@ main {
 
     .product_doc_links {
         padding: 2%; 
-        overflow-x: scroll; 
     }
 
     .product_doc_links img {

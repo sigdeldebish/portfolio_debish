@@ -192,7 +192,7 @@ footer {
 @media (max-width: 600px) {
     footer, header {
       height: 15vh; 
-      flex-direction: column; 
+      flex-direction: row; 
       padding: 5px; 
     }
   
@@ -225,7 +225,7 @@ footer {
   
     .center_footer_note {
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1;
     }
   
     .career_left, .academics_right {
