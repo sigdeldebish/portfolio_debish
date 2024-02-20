@@ -191,12 +191,16 @@ footer {
 
 @media (max-width: 600px) {
     footer, header {
-      height: 18vh; 
+      height: 80%; 
     }
   
     .center_footer_note {
       font-size: 50%; 
       line-height: normal; 
+      img {
+        height: 70%;
+        width: 70%;
+      }
     }
   
     .career_left, .academics_right {
@@ -217,22 +221,26 @@ footer {
 
   @media (min-width: 601px) and (max-width: 1024px) {
     footer, header {
-      height: 12vh; 
+      height: 80%; 
     }
   
     .center_footer_note {
       font-size: 60%;
       line-height: 1;
+      img {
+        height: 70%;
+        width: 70%;
+      }
     }
   
     .career_left, .academics_right {
       font-size: 50%;
-      padding-bottom: 1vh;
-      padding-top: 1vh;
+      padding-bottom: 1%;
+      padding-top: 1%;
     }
   
     .footer_social_media_links img {
-      padding: 0.5vw;
+      padding: 1%;
     }
 }
   
