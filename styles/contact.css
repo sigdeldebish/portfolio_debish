@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/*
+
+Contact and Feedback Main Content Stylesheet
+Author: Debish Sigdel
+Filename: contact.css.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 80vh;
+    padding-bottom: 10vh;
+    background-image: url(../images/about_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    h2 {
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 200%;
+    }
+    label {
+        font-size: 120%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.feedback_form {
+    display: grid;
+    grid-column: 0;
+    height: 100%;
+    background: radial-gradient(
+      #11bc22eb,
+      #eeefedac
+    );
+    
+}
+
+.contact_container {
+    align-items: center;
+    justify-content: space-around;
+    background: radial-gradient(
+      #a55adbeb,
+      #eeefedac
+    );
+}
+
+.contact_info {
+    display: block;
+    grid-column: 1;
+    height: 100%;
+    align-items: center;
+    padding:20px;
+}
+
+
+.form_field {
+    margin-bottom: 15px;
+}
+.form_field label {
+    display: block;
+}
+
+.for_submit_message {
+    margin-top: 2%;
+    font-size: 3vw;
+    top: 1;
+    right: 2;
+}
+
+.contact_submit_message {
+    margin-top: 2%;
+    font-size: 3vw;
+    top: 1;
+    right: 2;
+}
+
+#name, #bestThing, #futureIdeas {
+    border-radius: 10%;
+    border: 10%; 
+    padding: 1%; 
+    margin-top: 1%; 
+    width: 60%;
+}
+
+#improve {
+    border-radius: 10%;
+    border: 10%; 
+    padding: 1%; 
+    margin-top: 1%; 
+    width: 80%;
+}
+
+#message {
+    width: 60%;
+    height: 20vh;
+}
+
+
+#rate {
+    border-radius: 10%;
+    border: 10%; 
+    padding: 1%; 
+    margin-top: 1%; 
+    width: 5vw;
+}
+
+#rate:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+.form_field input[type="text"],
+
+.form_field input[type="number"],
+
+.form_field textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    bottom: 0;
+}
+
+
+
+.feedback_form, .contact_info {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback_form h2, .contact_info h2 {
+    margin-top: 0;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Makes sure padding doesn't affect overall width */
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .grid_container {
+        overflow-x: scroll;
+        padding-top: 0.1vh;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        h2 {
+            font-size: smaller;
+        }
+        input{
+            font-size: 2vw;
+        }
+    }
+
+    .clock_container {
+        grid-row: 2;
+        align-items: center;
+    }
+    .quiz_container {
+        grid-row: 3;
+    }
+
+    #question {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 4vw;
+        font-weight: bolder;
+        
+    }
+    
+    #quiz_answer {
+        width: 25vw;
+        padding: 2%;
+    }
+    
+    #submit {
+        padding: 0.5% 0.5%;
+        cursor: pointer;
+    }
+    
+    #user_feedback {
+        margin-top: 2%;
+        font-size: 3vw;
+    }
+}

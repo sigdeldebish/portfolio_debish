@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfolio Lounge</title>
    <link rel="stylesheet" href="../styles/header_footer.css">
-   <link rel="stylesheet" href="../styles/lounge.css">
+   <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <header>
@@ -14,8 +14,7 @@
                 <img src="../images/icons/profile_pic.jpg" alt="Profile Picture" class="profile_pic">
             </a>
             <div class="header_bar_message">
-                Welcome to my digital lounge!  &#128588 &#128588 &#128588<br/><br/>
-                Here's some lounge music:
+                Thanks for visiting! &#128591 &#128591 Please leave some feedback on your thoughts about this site!
             </div>
         </div>
         <div class="burger_dropdown"> 
@@ -37,35 +36,47 @@
 
     <main class="main_content">
         <div class="grid_container">
-            <div class="youtube_video">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/cWGE9Gi0bB0?si=ajvrlInTjHLTqiJS" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-                 <!-- Embedded code provided by Youtube to play a video within my body container-->
+            <div class="feedback_form">
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <div class="form_field">
+                        <label for="name">Name (Required):</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_field">
+                        <label for="rate">Rate my website (1 to 10) (Required):</label>
+                        <input type="number" id="rate" name="rate" min="1" max="10" required>
+                    </div>
+                    <div class="form_field">
+                        <label for="bestThing">What in the site was the best part for you?</label>
+                        <textarea id="bestThing" name="bestThing"></textarea>
+                    </div>
+                    <div class="form_field">
+                        <label for="futureIdeas">Any ideas for future inclusion?</label>
+                        <textarea id="futureIdeas" name="futureIdeas"></textarea>
+                    </div>
+                    <div class="form_field">
+                        <label for="improve">How can I improve?</label>
+                        <textarea id="improve" name="improve"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <div id="for_submit_message"></div>
+                </form>
+
             </div>
-            <div class="clock_container">
-                <div id="clock" class="clock_beside_video">
-                    <div id="hour_container">
-                    </div>
-                    <div id="minute_container">
-                    </div>
-                    <div id="second_container">
-                    </div>
+            <div class="contact_container">
+                <div class="contact_info">
+                    <h2>Contact me</h2>
+                    <form id="contactForm">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <div class="contact_submit>">
+                            <button type="submit">Send Message</button>
+                        </div>
+                        <div id="contact_submit_message"></div>
+                    </form>
                 </div>
-            </div>
-            <div class="quiz_container">
-                <h2>Trivia Time!</h2>
-                <div id="question"></div>
-                <input type="text" id="quiz_answer" placeholder="Enter answer here...">
-                <button id="submit">Submit</button>
-                <div id="user_feedback"></div>
-            </div>
             </div>
         </div>     
     </main>
@@ -106,6 +117,6 @@
  
     </footer>
     <script src="../scripts/script.js"></script>
-    <script src="../scripts/lounge.js"></script>
+    <script src="../scripts/contact.js"></script>
 </body>
 </html>
