@@ -1,26 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-  if (document.title === 'Portfolio Knowledge Share Page'){
-    let currentSlide = 1;
-    showSlide(currentSlide);
+  let currentSlide = 1;
+  showSlide(currentSlide);
 
-    function changeSlide(n) {
-      showSlide(currentSlide += n);
-    }
+  document.getElementById('prev').addEventListener('click', function(){
+    showSlide(currentSlide -= 1)
+  });
+  document.getElementById('next').addEventListener('click', function(){
+    showSlide(currentSlide += 1)
+  });
+    
 
-    function showSlide(n) {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      if (n > slides.length) {currentSlide = 1}
-      if (n < 1) {currentSlide = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      if (slides[currentSlide-1].style.display) {
-        slides[currentSlide-1].style.display = "block";
-      };
-      
+  function showSlide(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {currentSlide = 1}
+    if (n < 1) {currentSlide = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-  }
+    slides[currentSlide-1].style.display = "block";
+    
+  };
+
 });
 
 

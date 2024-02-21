@@ -5,7 +5,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfolio Knowledge Share Page</title>
    <link rel="stylesheet" href="../styles/header_footer.css">
-   <!-- <link rel="stylesheet" href="../styles/homepage.css"> -->
    <link rel="stylesheet" href="../styles/knowledge.css">
 </head>
 <body>
@@ -284,78 +283,122 @@
 
                     </div>
                 </div>
-                <button class="prev" onclick="changeSlide(-1)">&#10094; Prev</button>
-                <button class="next" onclick="changeSlide(1)">Next &#10095;</button>
+                <button class="prev" id="prev">&#10094; Prev</button>
+                <button class="next" id="next">Next &#10095;</button>
             </div>
             <div class="lower_grid">
                 <h2>Product Documentation Links</h2>
                 <div class="product_doc_links">
                     <div class="icon_container">
-                        <a href="https://www.linkedin.com/in/debish-sigdel-37a80924b/" target="_blank">
+                        <a href="https://grafana.com/docs/grafana/latest/" target="_blank">
                             <img src="../images/icons/grafana.png" class="icon_size" alt="Grafana">
                             <span class="icon_tooltip">Grafana</span>
                         </a>
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/prometheus.png" class="icon_size" alt="Prometheus">
-                        <span class="icon_tooltip">Prometheus</span>
+                        <a href="https://prometheus.io/docs/prometheus/latest/getting_started/" target="_blank">
+                            <img src="../images/icons/prometheus.png" class="icon_size" alt="Prometheus">
+                            <span class="icon_tooltip">Prometheus</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/postgre.png" class="icon_size" alt="PostgreSQL">
-                        <span class="icon_tooltip">PostgreSQL</span>
+                        <a href="https://www.postgresql.org/docs/current/intro-whatis.html" target="_blank">
+                            <img src="../images/icons/postgre.png" class="icon_size" alt="PostgreSQL">
+                            <span class="icon_tooltip">PostgreSQL</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/kafka.png" class="icon_size" alt="Kafka">
-                        <span class="icon_tooltip">Kafka</span>
+                        <a href="https://kafka.apache.org/documentation/" target="_blank">
+                            <img src="../images/icons/kafka.png" class="icon_size" alt="Kafka">
+                            <span class="icon_tooltip">Kafka</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/python_icon.png" class="icon_size" alt="Python">
-                        <span class="icon_tooltip">Python</span>
+                        <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">
+                            <img src="../images/icons/python_icon.png" class="icon_size" alt="Python">
+                            <span class="icon_tooltip">Python</span>
+                        </a>
+                            
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/java_icon.png" class="icon_size" alt="Java">
-                        <span class="icon_tooltip">Java</span>
+                        <a href="https://dev.java/learn/getting-started/" target="_blank">
+                            <img src="../images/icons/java_icon.png" class="icon_size" alt="Java">
+                            <span class="icon_tooltip">Java</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/docker_icon.png" class="icon_size" alt="Docker">
-                        <span class="icon_tooltip">Docker</span>
+                        <a href="https://docs.docker.com/get-started/overview/" target="_blank">
+                            <img src="../images/icons/docker_icon.png" class="icon_size" alt="Docker">
+                            <span class="icon_tooltip">Docker</span>
+                        </a>
+                            
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/kubernetes_icon.png" class="icon_size" alt="Kubernetes">
-                        <span class="icon_tooltip">Kubernetes</span>
+                        <a href="https://kubernetes.io/docs/concepts/overview/" target="_blank">
+                            <img src="../images/icons/kubernetes_icon.png" class="icon_size" alt="Kubernetes">
+                            <span class="icon_tooltip">Kubernetes</span>
+                        </a>
+                            
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/aws_icon.png" class="icon_size" alt="AWS">
-                        <span class="icon_tooltip">AWS</span>
+                        <a href="https://aws.amazon.com/getting-started/" target="_blank">
+                            <img src="../images/icons/aws_icon.png" class="icon_size" alt="AWS">
+                            <span class="icon_tooltip">AWS</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/linux_icon.png" class="icon_size" alt="Linux">
-                        <span class="icon_tooltip">Linux</span>
+                        <a href="https://docs.kernel.org/" target="_blank">
+                            <img src="../images/icons/linux_icon.png" class="icon_size" alt="Linux">
+                            <span class="icon_tooltip">Linux</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/git_icon.png" class="icon_size" alt="Git">
-                        <span class="icon_tooltip">Git</span>
+                        <a href="https://git-scm.com/docs/git" target="_blank">
+                            <img src="../images/icons/git_icon.png" class="icon_size" alt="Git">
+                            <span class="icon_tooltip">Git</span>
+                        </a>
+                        
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/jenkins_icon.png" class="icon_size" alt="Jenkins">
-                        <span class="icon_tooltip">Jenkins</span>
+                        <a href="https://www.jenkins.io/doc/" target="_blank">
+                            <img src="../images/icons/jenkins_icon.png" class="icon_size" alt="Jenkins">
+                            <span class="icon_tooltip">Jenkins</span>
+                        </a>
+                            
                     </div>
                     
                     <div class="icon_container">
-                        <img src="../images/icons/redis_icon.png" class="icon_size" alt="Redis">
-                        <span class="icon_tooltip">Redis</span>
+                        <a href="https://redis.io/docs/" target="_blank">
+                            <img src="../images/icons/redis_icon.png" class="icon_size" alt="Redis">
+                            <span class="icon_tooltip">Redis</span>
+                        </a>
+                           
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/openshift_icon.png" class="icon_size" alt="Openshift">
-                        <span class="icon_tooltip">Openshift</span>
+                        <a href="https://docs.openshift.com/" target="_blank">
+                            <img src="../images/icons/openshift_icon.png" class="icon_size" alt="Openshift">
+                            <span class="icon_tooltip">Openshift</span>
+                        </a>
+                            
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/rest.png" class="icon_size" alt="Rest API">
-                        <span class="icon_tooltip">Rest API</span>
+                        <a href="https://restfulapi.net/" target="_blank">
+                            <img src="../images/icons/rest.png" class="icon_size" alt="Rest API">
+                            <span class="icon_tooltip">Rest API</span>
+                        </a>
                     </div>
                     <div class="icon_container">
-                        <img src="../images/icons/swagger.png" class="icon_size" alt="Swagger UI">
-                        <span class="icon_tooltip">Swagger</span>
+                        <a href="https://swagger.io/docs/" target="_blank">
+                            <img src="../images/icons/swagger.png" class="icon_size" alt="Swagger UI">
+                            <span class="icon_tooltip">Swagger</span>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
