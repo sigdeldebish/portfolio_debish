@@ -1,22 +1,22 @@
 function updateClock() {
-    const now = new Date(); 
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+  const now = new Date(); 
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+
   
-    
-    if (hours < 10) {
-        hours = '0' + hours;
-    }
-    else if (minutes < 10){
-        minutes = '0' + minutes;
-    }
-    else if (seconds < 10){
-        seconds = '0' + seconds;
-    }
-    document.getElementById('hour_container').textContent = hours + ': ';
-    document.getElementById('minute_container').textContent = minutes + ': ';
-    document.getElementById('second_container').textContent = seconds + ' ';
+  if (hours < 10) {
+      hours = '0' + hours;
+  }
+  if (minutes < 10){
+      minutes = '0' + minutes;
+  }
+  if (seconds < 10){
+      seconds = '0' + seconds;
+  }
+  document.getElementById('hour_container').textContent = hours + ': ';
+  document.getElementById('minute_container').textContent = minutes + ': ';
+  document.getElementById('second_container').textContent = seconds + ' ';
 }
 
 
